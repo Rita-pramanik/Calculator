@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sylish Counter</title>
+    <title>Counter</title>
     <style>
         body {
             margin: 0px;
@@ -12,7 +12,6 @@
             background-color: rgb(244, 180, 244);
             display: flex;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
             flex-direction: column;
         }
@@ -33,12 +32,12 @@
             color: white;
         }
 
-        button:hover {
+        botton:hover {
             transform: scale(1.12);
         }
 
         #inc {
-            background-color: #228C22;
+            background-color: #228c22
         }
 
         #dec {
@@ -70,14 +69,12 @@
         <button id="dec">Decrement</button>
     </div>
     <button id="reset">Reset</button>
-
     <script>
         let count = 0;
         let display = document.getElementById("count");
         let incBtn = document.getElementById("inc");
         let decBtn = document.getElementById("dec");
         let resetBtn = document.getElementById("reset");
-
         incBtn.addEventListener("click", function () {
             count++;
             display.textContent = "Count:" + count;
